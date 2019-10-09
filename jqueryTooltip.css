@@ -1,0 +1,59 @@
+#jqueryToolTip_wrapper {
+    background: none repeat scroll 0 0 rgba(185, 181, 248, 0.945);
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border:0.5px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    max-width: 250px;
+    padding: 5px;
+    /* The jqueryToolTip_wrapper class use position:relative, which is needed to position the tooltip text (position:absolute).  */
+    position: absolute; 
+    z-index: 999;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+    display: none;
+}
+#jqueryToolTip_wrapper .jqueryToolTip_arrow {
+    top: auto;
+    display:block;
+    width:0;
+    height:0;
+    border:solid 10px;
+    border-color:transparent transparent rgb(185, 181, 248) transparent;
+    border-color:transparent transparent rgba(185, 181, 248,0.8) transparent;
+    position:absolute;
+    top:-20px;
+    left:50%
+}
+#jqueryToolTip_wrapper .jqueryToolTip_arrow.arrow_down {
+    border-color:rgb(185, 181, 248) transparent transparent transparent;
+    border-color:rgba(185, 181, 248, 0.8) transparent transparent transparent;
+    top:100%; /* to keep the Arrow down after the tooltip content */
+    left:50% /* to keep the Arrow on right at mid of the tooltip content */
+}
+#jqueryToolTip_wrapper .jqueryToolTip_arrow.arrow_right {
+    border-color: transparent transparent transparent rgb(185, 181, 248);
+    border-color: transparent transparent transparent rgb(185, 181, 248, 0.8);
+    top:50%;
+    left:100%
+}
+#jqueryToolTip_wrapper .jqueryToolTip_arrow.arrow_left {
+    border-color:transparent rgb(185, 181, 248) transparent transparent;
+    border-color:transparent rgba(185, 181, 248, 0.8) transparent transparent;
+    top:50px;
+    left:-20px;;
+}
+
+.tipClose {
+    background-color:rgb(122, 117, 201);
+    padding: 0;
+    text-align: center;
+    font-size: 10px;    
+    height: 18px;
+}
+/* .jqueryToolTip_text {
+    /* border-bottom: 1px dotted black; */
+
