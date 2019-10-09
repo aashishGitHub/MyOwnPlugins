@@ -8,3 +8,4 @@ Example
  
  The position where the tooltip loads can be set while calling the plugin, as in the jqueryToolTip.js file.
  
+ <b>Try it by opening the index.html in your browser.<b/>
